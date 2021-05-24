@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B4330000265C257A007DE3C7 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B433FFFE265C257A007DE3C7 /* SplashViewController.xib */; };
+		B4330006265C3141007DE3C7 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4330005265C3141007DE3C7 /* AppAssembly.swift */; };
 		B433FFE5265C2456007DE3C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B433FFE4265C2456007DE3C7 /* AppDelegate.swift */; };
 		B433FFEE265C245A007DE3C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B433FFED265C245A007DE3C7 /* Assets.xcassets */; };
 		B433FFF1265C245A007DE3C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B433FFEF265C245A007DE3C7 /* LaunchScreen.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B4330005265C3141007DE3C7 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		B433FFE1265C2456007DE3C7 /* CiceSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiceSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B433FFE4265C2456007DE3C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B433FFED265C245A007DE3C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 			path = SplashView;
 			sourceTree = "<group>";
 		};
+		B4330004265C30CD007DE3C7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B4330005265C3141007DE3C7 /* AppAssembly.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		B433FFD8265C2456007DE3C7 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +73,7 @@
 		B433FFE3265C2456007DE3C7 /* CiceSports */ = {
 			isa = PBXGroup;
 			children = (
+				B4330004265C30CD007DE3C7 /* Core */,
 				B433FFFC265C2530007DE3C7 /* Modules */,
 				B433FFE4265C2456007DE3C7 /* AppDelegate.swift */,
 				B433FFED265C245A007DE3C7 /* Assets.xcassets */,
@@ -150,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4330006265C3141007DE3C7 /* AppAssembly.swift in Sources */,
 				B433FFE5265C2456007DE3C7 /* AppDelegate.swift in Sources */,
 				B433FFFF265C257A007DE3C7 /* SplashViewController.swift in Sources */,
 			);
