@@ -23,7 +23,13 @@ final public class SplashAssembly {
     static func splashPresenter(viewController: SplashViewController) -> SplashPresenterProtocol {
         let presenter = SplashPresenterImpl(viewController: viewController)
         presenter.router = splashRouter(viewController: viewController, presenter: presenter)
+        presenter.interactor = splashInteractor()
         return presenter
+    }
+    
+    static func splashInteractor() -> SplashInteractorProtocol {
+        let interactor = SplashInteractorImpl()
+        return interactor
     }
     
     static func splashRouter(viewController: SplashViewController, presenter: SplashPresenterProtocol) -> SplashRouterProtocol {

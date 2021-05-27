@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091CA0A6265EB904007A19BF /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CA0A5265EB904007A19BF /* RequestManager.swift */; };
+		091CA0AA265EBA24007A19BF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CA0A9265EBA24007A19BF /* Utils.swift */; };
+		091CA0AE265EC41E007A19BF /* SplashProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CA0AD265EC41E007A19BF /* SplashProviderImpl.swift */; };
+		091CA0B3265EC764007A19BF /* ResponseMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CA0B2265EC764007A19BF /* ResponseMenuModel.swift */; };
+		091CA0B6265ED294007A19BF /* SplashInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CA0B5265ED294007A19BF /* SplashInteractorImpl.swift */; };
+		091CA0BB265ED961007A19BF /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CA0BA265ED961007A19BF /* MenuViewModel.swift */; };
 		09FDA25D265D6D45005FC381 /* SplashPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDA25C265D6D45005FC381 /* SplashPresenterImpl.swift */; };
 		09FDA260265D6EE5005FC381 /* SplashRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDA25F265D6EE5005FC381 /* SplashRouterImpl.swift */; };
 		09FDA263265D71BA005FC381 /* SplashAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDA262265D71BA005FC381 /* SplashAssembly.swift */; };
@@ -21,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091CA0A5265EB904007A19BF /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		091CA0A9265EBA24007A19BF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		091CA0AD265EC41E007A19BF /* SplashProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProviderImpl.swift; sourceTree = "<group>"; };
+		091CA0B2265EC764007A19BF /* ResponseMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMenuModel.swift; sourceTree = "<group>"; };
+		091CA0B5265ED294007A19BF /* SplashInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractorImpl.swift; sourceTree = "<group>"; };
+		091CA0BA265ED961007A19BF /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
 		09FDA25C265D6D45005FC381 /* SplashPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenterImpl.swift; sourceTree = "<group>"; };
 		09FDA25F265D6EE5005FC381 /* SplashRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouterImpl.swift; sourceTree = "<group>"; };
 		09FDA262265D71BA005FC381 /* SplashAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAssembly.swift; sourceTree = "<group>"; };
@@ -47,6 +59,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091CA0A4265EB8CD007A19BF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				091CA0A5265EB904007A19BF /* RequestManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		091CA0A8265EBA14007A19BF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				091CA0A9265EBA24007A19BF /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		091CA0AC265EC3F0007A19BF /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				091CA0B1265EC6DF007A19BF /* ServerModel */,
+				09FDA262265D71BA005FC381 /* SplashAssembly.swift */,
+				091CA0AD265EC41E007A19BF /* SplashProviderImpl.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		091CA0B1265EC6DF007A19BF /* ServerModel */ = {
+			isa = PBXGroup;
+			children = (
+				091CA0B2265EC764007A19BF /* ResponseMenuModel.swift */,
+			);
+			path = ServerModel;
+			sourceTree = "<group>";
+		};
+		091CA0B8265ED93F007A19BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				091CA0BA265ED961007A19BF /* MenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		09FDA265265D72DB005FC381 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +112,13 @@
 		B4330002265C2593007DE3C7 /* SplashView */ = {
 			isa = PBXGroup;
 			children = (
+				091CA0B8265ED93F007A19BF /* ViewModel */,
+				091CA0AC265EC3F0007A19BF /* Infrastructure */,
 				B433FFFD265C257A007DE3C7 /* SplashViewController.swift */,
 				B433FFFE265C257A007DE3C7 /* SplashViewController.xib */,
 				09FDA25C265D6D45005FC381 /* SplashPresenterImpl.swift */,
+				091CA0B5265ED294007A19BF /* SplashInteractorImpl.swift */,
 				09FDA25F265D6EE5005FC381 /* SplashRouterImpl.swift */,
-				09FDA262265D71BA005FC381 /* SplashAssembly.swift */,
 			);
 			path = SplashView;
 			sourceTree = "<group>";
@@ -102,6 +158,8 @@
 		B433FFE3265C2456007DE3C7 /* CiceSports */ = {
 			isa = PBXGroup;
 			children = (
+				091CA0A8265EBA14007A19BF /* Utils */,
+				091CA0A4265EB8CD007A19BF /* Managers */,
 				09FDA265265D72DB005FC381 /* Helpers */,
 				B433000A265C38E0007DE3C7 /* BaseVIPER */,
 				B4330004265C30CD007DE3C7 /* Core */,
@@ -193,13 +251,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4330006265C3141007DE3C7 /* AppAssembly.swift in Sources */,
+				091CA0BB265ED961007A19BF /* MenuViewModel.swift in Sources */,
 				09FDA263265D71BA005FC381 /* SplashAssembly.swift in Sources */,
 				09FDA25D265D6D45005FC381 /* SplashPresenterImpl.swift in Sources */,
 				B433FFE5265C2456007DE3C7 /* AppDelegate.swift in Sources */,
 				B433FFFF265C257A007DE3C7 /* SplashViewController.swift in Sources */,
+				091CA0AA265EBA24007A19BF /* Utils.swift in Sources */,
 				B433000C265C38F3007DE3C7 /* BaseVIPER.swift in Sources */,
+				091CA0A6265EB904007A19BF /* RequestManager.swift in Sources */,
+				091CA0AE265EC41E007A19BF /* SplashProviderImpl.swift in Sources */,
+				091CA0B6265ED294007A19BF /* SplashInteractorImpl.swift in Sources */,
 				09FDA260265D6EE5005FC381 /* SplashRouterImpl.swift in Sources */,
 				09FDA267265D72F9005FC381 /* ReuseIdentifier.swift in Sources */,
+				091CA0B3265EC764007A19BF /* ResponseMenuModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2C7W4RF846;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CiceSports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -358,7 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2C7W4RF846;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CiceSports/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
