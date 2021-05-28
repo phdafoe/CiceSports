@@ -12,7 +12,7 @@ protocol SplashPresenterProtocol {
     func showHomeTabBar()
 }
 
-class SplashPresenterImpl: BasePresenter<SplashViewControllerProtocol, SplashRouterProtocol> {
+class SplashPresenterImpl: BasePresenter<SplashPresenterOutputProtocol, SplashRouterProtocol> {
     
     var interactor: SplashInteractorProtocol?
     var viewModel: [MenuResponse] = []

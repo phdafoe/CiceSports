@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol SplashViewControllerProtocol {
+protocol SplashPresenterOutputProtocol {
     func fetchDataFromPresent()
 }
 
@@ -38,10 +38,9 @@ class SplashViewController: BaseViewController<SplashPresenterProtocol>, ReuseId
             self.presenter?.showHomeTabBar()
         }
     }
-
 }
 
-extension SplashViewController: SplashViewControllerProtocol {
+extension SplashViewController: SplashPresenterOutputProtocol {
     
     func fetchDataFromPresent() {
         viewAnimator = UIViewPropertyAnimator(duration: 1.0, curve: .easeInOut, animations: nil)

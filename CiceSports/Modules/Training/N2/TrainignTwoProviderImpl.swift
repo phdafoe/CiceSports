@@ -1,4 +1,4 @@
-// TrainingTwoProvider.swift
+// TrainignTwoProvider.swift
 // Architecture VIPER
 //
 // This source file is open source project in iOS
@@ -7,11 +7,11 @@
 import Foundation
 import Combine
 
-protocol TrainingTwoProviderProtocol {
+protocol TrainignTwoProviderProtocol {
     
 }
 
-class TrainingTwoProviderImpl: TrainingTwoProviderProtocol {
+class TrainignTwoProviderImpl: TrainignTwoProviderProtocol {
 
     let provider: RequestManagerProtocol = RequestManager()
     

@@ -13,6 +13,12 @@
 		091CA0B3265EC764007A19BF /* ResponseMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CA0B2265EC764007A19BF /* ResponseMenuModel.swift */; };
 		091CA0B6265ED294007A19BF /* SplashInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CA0B5265ED294007A19BF /* SplashInteractorImpl.swift */; };
 		091CA0BB265ED961007A19BF /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091CA0BA265ED961007A19BF /* MenuViewModel.swift */; };
+		093113242661636800B3D557 /* TrainignTwoInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093113222661636800B3D557 /* TrainignTwoInteractorImpl.swift */; };
+		093113252661636800B3D557 /* TrainignTwoAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093113232661636800B3D557 /* TrainignTwoAssembly.swift */; };
+		093113262661636800B3D557 /* TrainignTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931131D2661636800B3D557 /* TrainignTwoViewController.swift */; };
+		093113272661636800B3D557 /* TrainignTwoPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931131E2661636800B3D557 /* TrainignTwoPresenterImpl.swift */; };
+		093113282661636800B3D557 /* TrainignTwoRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093113202661636800B3D557 /* TrainignTwoRouterImpl.swift */; };
+		093113292661636800B3D557 /* TrainignTwoProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931131F2661636800B3D557 /* TrainignTwoProviderImpl.swift */; };
 		09BD46802660140B001D1A09 /* SWRevealViewController .m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD467E2660140B001D1A09 /* SWRevealViewController .m */; };
 		09BD468526601556001D1A09 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD468326601556001D1A09 /* HomeTabBarController.swift */; };
 		09BD468626601556001D1A09 /* HomeTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BD468426601556001D1A09 /* HomeTabBarController.xib */; };
@@ -21,12 +27,6 @@
 		09BD468F26602240001D1A09 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BD468D26602240001D1A09 /* MenuViewController.xib */; };
 		09BD4696266026D3001D1A09 /* TrainingOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD4694266026D3001D1A09 /* TrainingOneViewController.swift */; };
 		09BD4697266026D3001D1A09 /* TrainingOneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BD4695266026D3001D1A09 /* TrainingOneViewController.xib */; };
-		09BD46A326603141001D1A09 /* TrainingTwoRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD469D26603141001D1A09 /* TrainingTwoRouterImpl.swift */; };
-		09BD46A426603141001D1A09 /* TrainingTwoProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD46A026603141001D1A09 /* TrainingTwoProviderImpl.swift */; };
-		09BD46A526603141001D1A09 /* TrainingTwoPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD46A126603141001D1A09 /* TrainingTwoPresenterImpl.swift */; };
-		09BD46A626603141001D1A09 /* TrainingTwoAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD469E26603141001D1A09 /* TrainingTwoAssembly.swift */; };
-		09BD46A726603141001D1A09 /* TrainingTwoInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD469F26603141001D1A09 /* TrainingTwoInteractorImpl.swift */; };
-		09BD46A826603141001D1A09 /* TrainingTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD46A226603141001D1A09 /* TrainingTwoViewController.swift */; };
 		09FDA25D265D6D45005FC381 /* SplashPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDA25C265D6D45005FC381 /* SplashPresenterImpl.swift */; };
 		09FDA260265D6EE5005FC381 /* SplashRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDA25F265D6EE5005FC381 /* SplashRouterImpl.swift */; };
 		09FDA263265D71BA005FC381 /* SplashAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDA262265D71BA005FC381 /* SplashAssembly.swift */; };
@@ -47,6 +47,13 @@
 		091CA0B2265EC764007A19BF /* ResponseMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseMenuModel.swift; sourceTree = "<group>"; };
 		091CA0B5265ED294007A19BF /* SplashInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashInteractorImpl.swift; sourceTree = "<group>"; };
 		091CA0BA265ED961007A19BF /* MenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		0931131D2661636800B3D557 /* TrainignTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainignTwoViewController.swift; sourceTree = "<group>"; };
+		0931131E2661636800B3D557 /* TrainignTwoPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainignTwoPresenterImpl.swift; sourceTree = "<group>"; };
+		0931131F2661636800B3D557 /* TrainignTwoProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainignTwoProviderImpl.swift; sourceTree = "<group>"; };
+		093113202661636800B3D557 /* TrainignTwoRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainignTwoRouterImpl.swift; sourceTree = "<group>"; };
+		093113212661636800B3D557 /* TrainignTwoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainignTwoViewController.xib; sourceTree = "<group>"; };
+		093113222661636800B3D557 /* TrainignTwoInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainignTwoInteractorImpl.swift; sourceTree = "<group>"; };
+		093113232661636800B3D557 /* TrainignTwoAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainignTwoAssembly.swift; sourceTree = "<group>"; };
 		09BD467D2660140A001D1A09 /* CiceSports-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CiceSports-Bridging-Header.h"; sourceTree = "<group>"; };
 		09BD467E2660140B001D1A09 /* SWRevealViewController .m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SWRevealViewController .m"; sourceTree = "<group>"; };
 		09BD467F2660140B001D1A09 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -57,12 +64,6 @@
 		09BD468D26602240001D1A09 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		09BD4694266026D3001D1A09 /* TrainingOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingOneViewController.swift; sourceTree = "<group>"; };
 		09BD4695266026D3001D1A09 /* TrainingOneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingOneViewController.xib; sourceTree = "<group>"; };
-		09BD469D26603141001D1A09 /* TrainingTwoRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTwoRouterImpl.swift; sourceTree = "<group>"; };
-		09BD469E26603141001D1A09 /* TrainingTwoAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTwoAssembly.swift; sourceTree = "<group>"; };
-		09BD469F26603141001D1A09 /* TrainingTwoInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTwoInteractorImpl.swift; sourceTree = "<group>"; };
-		09BD46A026603141001D1A09 /* TrainingTwoProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTwoProviderImpl.swift; sourceTree = "<group>"; };
-		09BD46A126603141001D1A09 /* TrainingTwoPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTwoPresenterImpl.swift; sourceTree = "<group>"; };
-		09BD46A226603141001D1A09 /* TrainingTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTwoViewController.swift; sourceTree = "<group>"; };
 		09FDA25C265D6D45005FC381 /* SplashPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenterImpl.swift; sourceTree = "<group>"; };
 		09FDA25F265D6EE5005FC381 /* SplashRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouterImpl.swift; sourceTree = "<group>"; };
 		09FDA262265D71BA005FC381 /* SplashAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAssembly.swift; sourceTree = "<group>"; };
@@ -181,12 +182,13 @@
 		09BD4693266026B9001D1A09 /* N2 */ = {
 			isa = PBXGroup;
 			children = (
-				09BD469E26603141001D1A09 /* TrainingTwoAssembly.swift */,
-				09BD469F26603141001D1A09 /* TrainingTwoInteractorImpl.swift */,
-				09BD46A126603141001D1A09 /* TrainingTwoPresenterImpl.swift */,
-				09BD46A026603141001D1A09 /* TrainingTwoProviderImpl.swift */,
-				09BD469D26603141001D1A09 /* TrainingTwoRouterImpl.swift */,
-				09BD46A226603141001D1A09 /* TrainingTwoViewController.swift */,
+				093113232661636800B3D557 /* TrainignTwoAssembly.swift */,
+				093113222661636800B3D557 /* TrainignTwoInteractorImpl.swift */,
+				0931131E2661636800B3D557 /* TrainignTwoPresenterImpl.swift */,
+				0931131F2661636800B3D557 /* TrainignTwoProviderImpl.swift */,
+				093113202661636800B3D557 /* TrainignTwoRouterImpl.swift */,
+				0931131D2661636800B3D557 /* TrainignTwoViewController.swift */,
+				093113212661636800B3D557 /* TrainignTwoViewController.xib */,
 			);
 			path = N2;
 			sourceTree = "<group>";
@@ -349,26 +351,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4330006265C3141007DE3C7 /* AppAssembly.swift in Sources */,
-				09BD46A526603141001D1A09 /* TrainingTwoPresenterImpl.swift in Sources */,
+				093113242661636800B3D557 /* TrainignTwoInteractorImpl.swift in Sources */,
 				09BD46802660140B001D1A09 /* SWRevealViewController .m in Sources */,
 				091CA0BB265ED961007A19BF /* MenuViewModel.swift in Sources */,
+				093113272661636800B3D557 /* TrainignTwoPresenterImpl.swift in Sources */,
 				09FDA263265D71BA005FC381 /* SplashAssembly.swift in Sources */,
 				09FDA25D265D6D45005FC381 /* SplashPresenterImpl.swift in Sources */,
+				093113282661636800B3D557 /* TrainignTwoRouterImpl.swift in Sources */,
 				09BD468926601580001D1A09 /* HomeTabBarAssembly.swift in Sources */,
 				B433FFE5265C2456007DE3C7 /* AppDelegate.swift in Sources */,
 				B433FFFF265C257A007DE3C7 /* SplashViewController.swift in Sources */,
-				09BD46A626603141001D1A09 /* TrainingTwoAssembly.swift in Sources */,
-				09BD46A426603141001D1A09 /* TrainingTwoProviderImpl.swift in Sources */,
+				093113292661636800B3D557 /* TrainignTwoProviderImpl.swift in Sources */,
 				091CA0AA265EBA24007A19BF /* Utils.swift in Sources */,
 				B433000C265C38F3007DE3C7 /* BaseVIPER.swift in Sources */,
-				09BD46A726603141001D1A09 /* TrainingTwoInteractorImpl.swift in Sources */,
 				091CA0A6265EB904007A19BF /* RequestManager.swift in Sources */,
+				093113252661636800B3D557 /* TrainignTwoAssembly.swift in Sources */,
 				091CA0AE265EC41E007A19BF /* SplashProviderImpl.swift in Sources */,
 				091CA0B6265ED294007A19BF /* SplashInteractorImpl.swift in Sources */,
+				093113262661636800B3D557 /* TrainignTwoViewController.swift in Sources */,
 				09BD468E26602240001D1A09 /* MenuViewController.swift in Sources */,
 				09FDA260265D6EE5005FC381 /* SplashRouterImpl.swift in Sources */,
-				09BD46A326603141001D1A09 /* TrainingTwoRouterImpl.swift in Sources */,
-				09BD46A826603141001D1A09 /* TrainingTwoViewController.swift in Sources */,
 				09BD4696266026D3001D1A09 /* TrainingOneViewController.swift in Sources */,
 				09FDA267265D72F9005FC381 /* ReuseIdentifier.swift in Sources */,
 				09BD468526601556001D1A09 /* HomeTabBarController.swift in Sources */,
