@@ -2,7 +2,7 @@
 //  TrainingOneViewController.swift
 //  CiceSports
 //
-//  Created by cice on 27/05/2021.
+//  Created by cice on 28/05/2021.
 //
 
 import UIKit
