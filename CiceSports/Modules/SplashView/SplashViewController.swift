@@ -39,7 +39,6 @@ class SplashViewController: BaseViewController<SplashPresenterProtocol>, ReuseId
         }
     }
 
-
 }
 
 extension SplashViewController: SplashViewControllerProtocol {
