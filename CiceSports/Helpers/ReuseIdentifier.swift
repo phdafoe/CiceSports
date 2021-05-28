@@ -36,6 +36,7 @@ extension UIViewController {
                                          target: revealViewController(),
                                          action: #selector(SWRevealViewController.revealToggle(_:)))
         revealViewController()?.rightViewRevealWidth = 150
+        revealViewController()?.panGestureRecognizer()
         self.navigationItem.leftBarButtonItem = menuButton
     }
 }

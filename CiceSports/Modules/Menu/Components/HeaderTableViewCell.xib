@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="180" id="KGk-i7-Jjw" customClass="HeaderTableViewCell" customModule="CiceSports" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="AvR-0k-PbQ">
+                        <rect key="frame" x="108" y="16" width="104" height="104"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="104" id="4HU-4I-oyk"/>
+                            <constraint firstAttribute="width" constant="104" id="zU6-72-Mho"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9c-tF-XXt">
+                        <rect key="frame" x="139.5" y="130" width="41.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AvR-0k-PbQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="7fD-Gt-VEC"/>
+                    <constraint firstItem="O9c-tF-XXt" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="BdC-an-lam"/>
+                    <constraint firstItem="O9c-tF-XXt" firstAttribute="top" secondItem="AvR-0k-PbQ" secondAttribute="bottom" constant="10" id="rQl-OM-CQz"/>
+                    <constraint firstItem="AvR-0k-PbQ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="u0k-6z-jvH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="myImageAvatar" destination="AvR-0k-PbQ" id="1HR-ua-BfO"/>
+                <outlet property="myLiteralLBL" destination="O9c-tF-XXt" id="Qeu-g4-tkl"/>
+            </connections>
+            <point key="canvasLocation" x="-165.21739130434784" y="-60.9375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="avatar" width="210" height="210"/>
+    </resources>
+</document>
