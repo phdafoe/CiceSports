@@ -13,14 +13,15 @@ final public class MenuAssembly {
         return navigationController
     }
     
-    static func viewController() -> MenuViewController {
+    static func viewController(menu: dataDTO? = nil) -> MenuViewController {
         let vc = MenuViewController(nibName: MenuViewController.defaultReuseIdentifierViewController, bundle: nil)
-        vc.presenter = presenter(viewController: vc)
+        vc.presenter = presenter(viewController: vc, menu: menu!)
         return vc
     }
     
-    static func presenter(viewController: MenuViewController) -> MenuPresenterProtocol {
+    static func presenter(viewController: MenuViewController, menu: dataDTO) -> MenuPresenterProtocol {
         let presenter = MenuPresenterImpl(viewController: viewController)
+        presenter.datamenu = menu.menu
         presenter.router = router(viewController: viewController, presenter: presenter)
         presenter.interactor = interactor()
         return presenter
@@ -36,5 +37,9 @@ final public class MenuAssembly {
         return router
     }
     
+}
+
+struct dataDTO {
+    var menu: [MenuResponse]
 }
 

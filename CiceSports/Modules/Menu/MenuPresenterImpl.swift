@@ -14,6 +14,8 @@ class MenuPresenterImpl: BasePresenter<MenuViewControllerProtocol, MenuRouterPro
     
     var interactor: MenuInteractorProtocol?
     
+    var datamenu: [MenuResponse] = []
+    
 }
 
 
