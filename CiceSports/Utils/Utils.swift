@@ -45,8 +45,11 @@ struct RequestDTO {
 
 struct URLEndpoint {
     static let baseUrl = "https://app-cicesport-123.herokuapp.com/"
-    static let endpointMenu = "iCoMenu"
-    
+    static let endpointMenu = "iCoMenuResponse"
 }
 
+
+struct AuthHeroku {
+    static let authHeroku = "Bearer 123456789"
+}
 

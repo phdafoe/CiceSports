@@ -9,10 +9,10 @@ import Foundation
 
 protocol SplashPresenterProtocol {
     func fetchDataFromHeroku()
+    func showHomeTabBar()
 }
 
-
-class SplashPresenterImpl: BasePresenter<SplashViewController, SplashRouterProtocol> {
+class SplashPresenterImpl: BasePresenter<SplashViewControllerProtocol, SplashRouterProtocol> {
     
     var interactor: SplashInteractorProtocol?
     var viewModel: [MenuResponse] = []
@@ -26,9 +26,14 @@ extension SplashPresenterImpl: SplashPresenterProtocol {
             if let resultArraydDes = resultArray {
                 self?.viewModel.removeAll()
                 self?.viewModel = resultArraydDes
+                self?.viewController?.fetchDataFromPresent()
             }
         }, failure: { (error) in
             print(error?.localizedDescription ?? "Aqui Andres mete gamba")
         })
+    }
+    
+    internal func showHomeTabBar() {
+        self.router?.showApp(dataMenu: self.viewModel)
     }
 }

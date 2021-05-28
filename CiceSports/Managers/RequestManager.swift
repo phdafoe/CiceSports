@@ -17,13 +17,15 @@ class RequestManager: RequestManagerProtocol {
     internal func requestGeneric<T>(requestDto: RequestDTO, entityClass: T.Type) -> AnyPublisher<T, ApiError> where T: Decodable {
         
         let endpoint = requestDto.endpoint
+        var urlRequest = URLRequest(url: URL(string: endpoint)!)
+        let headers = AppAssembly.defaultHTTPHeaders
         
-        guard let urlDes = URL(string: endpoint) else {
-            preconditionFailure("\(ApiError.unknow)")
+        headers.forEach { (key, value) in
+            urlRequest.setValue(value, forHTTPHeaderField: key)
         }
         
         return URLSession.shared
-            .dataTaskPublisher(for: urlDes)
+            .dataTaskPublisher(for: urlRequest)
             .mapError { error -> ApiError in
                 ApiError.unknow
             }
