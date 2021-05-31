@@ -21,6 +21,7 @@ class SplashPresenterImpl: BasePresenter<SplashPresenterOutputProtocol, SplashRo
 
 extension SplashPresenterImpl: SplashPresenterProtocol {
     internal func fetchDataFromHeroku() {
+        
         self.interactor?.fetchDataFromHerokuBusiness(success: { [weak self] resultArray in
             guard self != nil else { return }
             if let resultArraydDes = resultArray {

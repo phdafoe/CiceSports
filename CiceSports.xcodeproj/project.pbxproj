@@ -38,6 +38,15 @@
 		0931136826617BBA00B3D557 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0931136626617BBA00B3D557 /* HeaderTableViewCell.xib */; };
 		0931136D26617F9200B3D557 /* BodyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931136B26617F9200B3D557 /* BodyTableViewCell.swift */; };
 		0931136E26617F9200B3D557 /* BodyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0931136C26617F9200B3D557 /* BodyTableViewCell.xib */; };
+		097ABF4626654AED009BBC29 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ABF4526654AED009BBC29 /* NetworkError.swift */; };
+		097ABF4B266560EB009BBC29 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ABF4A266560EB009BBC29 /* CoreDataStack.swift */; };
+		097ABF582665766C009BBC29 /* GenericWebViewAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ABF522665766B009BBC29 /* GenericWebViewAssembly.swift */; };
+		097ABF592665766C009BBC29 /* GenericWebViewProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ABF562665766C009BBC29 /* GenericWebViewProviderImpl.swift */; };
+		097ABF5A2665766C009BBC29 /* GenericWebViewPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ABF552665766C009BBC29 /* GenericWebViewPresenterImpl.swift */; };
+		097ABF5B2665766C009BBC29 /* GenericWebViewRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ABF532665766B009BBC29 /* GenericWebViewRouterImpl.swift */; };
+		097ABF5D2665766C009BBC29 /* GenericWebViewInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ABF572665766C009BBC29 /* GenericWebViewInteractorImpl.swift */; };
+		097ABF6326657691009BBC29 /* GenericWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ABF6126657691009BBC29 /* GenericWebViewViewController.swift */; };
+		097ABF6426657691009BBC29 /* GenericWebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097ABF6226657691009BBC29 /* GenericWebViewViewController.xib */; };
 		09BD46802660140B001D1A09 /* SWRevealViewController .m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD467E2660140B001D1A09 /* SWRevealViewController .m */; };
 		09BD468526601556001D1A09 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD468326601556001D1A09 /* HomeTabBarController.swift */; };
 		09BD468626601556001D1A09 /* HomeTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BD468426601556001D1A09 /* HomeTabBarController.xib */; };
@@ -87,6 +96,15 @@
 		0931136626617BBA00B3D557 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 		0931136B26617F9200B3D557 /* BodyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTableViewCell.swift; sourceTree = "<group>"; };
 		0931136C26617F9200B3D557 /* BodyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyTableViewCell.xib; sourceTree = "<group>"; };
+		097ABF4526654AED009BBC29 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		097ABF4A266560EB009BBC29 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		097ABF522665766B009BBC29 /* GenericWebViewAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewAssembly.swift; sourceTree = "<group>"; };
+		097ABF532665766B009BBC29 /* GenericWebViewRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewRouterImpl.swift; sourceTree = "<group>"; };
+		097ABF552665766C009BBC29 /* GenericWebViewPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewPresenterImpl.swift; sourceTree = "<group>"; };
+		097ABF562665766C009BBC29 /* GenericWebViewProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewProviderImpl.swift; sourceTree = "<group>"; };
+		097ABF572665766C009BBC29 /* GenericWebViewInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewInteractorImpl.swift; sourceTree = "<group>"; };
+		097ABF6126657691009BBC29 /* GenericWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewViewController.swift; sourceTree = "<group>"; };
+		097ABF6226657691009BBC29 /* GenericWebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericWebViewViewController.xib; sourceTree = "<group>"; };
 		09BD467D2660140A001D1A09 /* CiceSports-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CiceSports-Bridging-Header.h"; sourceTree = "<group>"; };
 		09BD467E2660140B001D1A09 /* SWRevealViewController .m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SWRevealViewController .m"; sourceTree = "<group>"; };
 		09BD467F2660140B001D1A09 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
@@ -122,7 +140,9 @@
 		091CA0A4265EB8CD007A19BF /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				097ABF4526654AED009BBC29 /* NetworkError.swift */,
 				091CA0A5265EB904007A19BF /* RequestManager.swift */,
+				097ABF4A266560EB009BBC29 /* CoreDataStack.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -170,6 +190,20 @@
 				0931136C26617F9200B3D557 /* BodyTableViewCell.xib */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		097ABF4D2665763E009BBC29 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				097ABF522665766B009BBC29 /* GenericWebViewAssembly.swift */,
+				097ABF572665766C009BBC29 /* GenericWebViewInteractorImpl.swift */,
+				097ABF552665766C009BBC29 /* GenericWebViewPresenterImpl.swift */,
+				097ABF562665766C009BBC29 /* GenericWebViewProviderImpl.swift */,
+				097ABF532665766B009BBC29 /* GenericWebViewRouterImpl.swift */,
+				097ABF6126657691009BBC29 /* GenericWebViewViewController.swift */,
+				097ABF6226657691009BBC29 /* GenericWebViewViewController.xib */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 		09BD467C266013E9001D1A09 /* MenuLateral */ = {
@@ -319,6 +353,7 @@
 		B433FFFC265C2530007DE3C7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				097ABF4D2665763E009BBC29 /* WebView */,
 				09BD469126602667001D1A09 /* Training */,
 				09BD468B26602223001D1A09 /* Menu */,
 				09BD4682266014FD001D1A09 /* Home */,
@@ -389,6 +424,7 @@
 				0931135C26616D4D00B3D557 /* MenuViewController.xib in Resources */,
 				B4330000265C257A007DE3C7 /* SplashViewController.xib in Resources */,
 				09BD468626601556001D1A09 /* HomeTabBarController.xib in Resources */,
+				097ABF6426657691009BBC29 /* GenericWebViewViewController.xib in Resources */,
 				0931136826617BBA00B3D557 /* HeaderTableViewCell.xib in Resources */,
 				0931136E26617F9200B3D557 /* BodyTableViewCell.xib in Resources */,
 				0931135626616D0200B3D557 /* TrainingOneViewController.xib in Resources */,
@@ -406,16 +442,20 @@
 			files = (
 				B4330006265C3141007DE3C7 /* AppAssembly.swift in Sources */,
 				093113242661636800B3D557 /* TrainignTwoInteractorImpl.swift in Sources */,
+				097ABF5A2665766C009BBC29 /* GenericWebViewPresenterImpl.swift in Sources */,
 				09311337266164CF00B3D557 /* TrainingOneProviderImpl.swift in Sources */,
 				09311338266164CF00B3D557 /* TrainingOneRouterImpl.swift in Sources */,
 				09BD46802660140B001D1A09 /* SWRevealViewController .m in Sources */,
 				0931136D26617F9200B3D557 /* BodyTableViewCell.swift in Sources */,
+				097ABF4B266560EB009BBC29 /* CoreDataStack.swift in Sources */,
 				0931133B266164CF00B3D557 /* TrainingOneInteractorImpl.swift in Sources */,
 				0931134F266166B000B3D557 /* MenuAssembly.swift in Sources */,
 				0931134D266166B000B3D557 /* MenuRouterImpl.swift in Sources */,
 				091CA0BB265ED961007A19BF /* MenuViewModel.swift in Sources */,
 				093113272661636800B3D557 /* TrainignTwoPresenterImpl.swift in Sources */,
+				097ABF5D2665766C009BBC29 /* GenericWebViewInteractorImpl.swift in Sources */,
 				09FDA263265D71BA005FC381 /* SplashAssembly.swift in Sources */,
+				097ABF582665766C009BBC29 /* GenericWebViewAssembly.swift in Sources */,
 				09FDA25D265D6D45005FC381 /* SplashPresenterImpl.swift in Sources */,
 				0931134B266166B000B3D557 /* MenuPresenterImpl.swift in Sources */,
 				093113282661636800B3D557 /* TrainignTwoRouterImpl.swift in Sources */,
@@ -425,6 +465,8 @@
 				B433FFFF265C257A007DE3C7 /* SplashViewController.swift in Sources */,
 				093113292661636800B3D557 /* TrainignTwoProviderImpl.swift in Sources */,
 				0931133A266164CF00B3D557 /* TrainingOneAssembly.swift in Sources */,
+				097ABF592665766C009BBC29 /* GenericWebViewProviderImpl.swift in Sources */,
+				097ABF6326657691009BBC29 /* GenericWebViewViewController.swift in Sources */,
 				0931135526616D0200B3D557 /* TrainingOneViewController.swift in Sources */,
 				091CA0AA265EBA24007A19BF /* Utils.swift in Sources */,
 				B433000C265C38F3007DE3C7 /* BaseVIPER.swift in Sources */,
@@ -437,10 +479,12 @@
 				091CA0B6265ED294007A19BF /* SplashInteractorImpl.swift in Sources */,
 				09FDA260265D6EE5005FC381 /* SplashRouterImpl.swift in Sources */,
 				09FDA267265D72F9005FC381 /* ReuseIdentifier.swift in Sources */,
+				097ABF5B2665766C009BBC29 /* GenericWebViewRouterImpl.swift in Sources */,
 				0931135B26616D4D00B3D557 /* MenuViewController.swift in Sources */,
 				0931134A266166B000B3D557 /* MenuProviderImpl.swift in Sources */,
 				09BD468526601556001D1A09 /* HomeTabBarController.swift in Sources */,
 				091CA0B3265EC764007A19BF /* ResponseMenuModel.swift in Sources */,
+				097ABF4626654AED009BBC29 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +655,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icologic.co.iOS.CiceSports;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "CiceSports/MenuLateral/CiceSports-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

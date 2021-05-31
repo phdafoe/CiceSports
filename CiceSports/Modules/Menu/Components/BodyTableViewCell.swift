@@ -44,6 +44,6 @@ extension BodyTableViewCell: BodyTableViewCellProtocol {
     internal func configCell(data: Menu) {
         self.data = data
         self.myNameAvatarLBL.text = data.literal
-       
+        self.myImageAvatarCell.image = showImageMenuWithName(imageMenu: data)
     }
 }

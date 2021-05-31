@@ -7,7 +7,7 @@
 import Foundation
 
 protocol MenuRouterProtocol {
-    
+    func showWebSiteInRouter()
 }
 
 class MenuRouterImpl: BaseRouter< MenuPresenterProtocol> {
@@ -16,6 +16,10 @@ class MenuRouterImpl: BaseRouter< MenuPresenterProtocol> {
 }
 
 extension MenuRouterImpl: MenuRouterProtocol {
-    
+    func showWebSiteInRouter() {
+        let vc = GenericWebViewAssembly.navigationController()
+        vc.modalPresentationStyle = .fullScreen
+        self.presentVC(vc, animated: true, completion: nil)
+    }
     
 }

@@ -1,23 +1,26 @@
+// GenericWebViewProvider.swift
+// Architecture VIPER
 //
-//  SplashProviderImpl.swift
-//  CiceSports
-//
-//  Created by cice on 26/05/2021.
-//
+// This source file is open source project in iOS
+// See README.md for more information
 
 import Foundation
 import Combine
 
-protocol SplashProviderProtocol {
-    func fetchMenu(completionHandler: @escaping (Result<ResponseMenuModel, NetworkingError>) -> ())
+protocol GenericWebViewProviderProtocol {
+    
 }
 
-class SplashProviderImpl: SplashProviderProtocol {
-    
+class GenericWebViewProviderImpl: GenericWebViewProviderProtocol {
+
     let provider: RequestManagerProtocol = RequestManager()
-    var cancellable: Set<AnyCancellable> = []
     
-    internal func fetchMenu(completionHandler: @escaping (Result<ResponseMenuModel, NetworkingError>) -> ()) {
+    ///
+    ///Ejemplo de petición con Combine OJO no borrar
+    ///
+    /*var cancellable: Set<AnyCancellable> = []
+    
+    internal func fetchMenu(completionHandler: @escaping (Result<ResponseMenuModel, ApiError>) -> ()) {
         
         let request = RequestDTO(params: nil,
                                  method: .get,
@@ -36,5 +39,8 @@ class SplashProviderImpl: SplashProviderProtocol {
             guard self != nil else { return }
             completionHandler(.success(responseMenuModel))
         }.store(in: &cancellable)
-    }
+    }*/
+    
 }
+
+
