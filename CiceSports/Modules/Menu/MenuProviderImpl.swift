@@ -8,25 +8,21 @@ import Foundation
 import Combine
 
 protocol MenuProviderProtocol {
-    
+    func fetchConsejos(completionHandler: @escaping (Result<ResponseConsejosModel, NetworkingError>) -> ())
 }
 
 class MenuProviderImpl: MenuProviderProtocol {
 
     let provider: RequestManagerProtocol = RequestManager()
+    var cancellable: Set<AnyCancellable> = []
     
-    ///
-    ///Ejemplo de petición con Combine OJO no borrar
-    ///
-    /*var cancellable: Set<AnyCancellable> = []
-    
-    internal func fetchMenu(completionHandler: @escaping (Result<ResponseMenuModel, ApiError>) -> ()) {
+    internal func fetchConsejos(completionHandler: @escaping (Result<ResponseConsejosModel, NetworkingError>) -> ()) {
         
         let request = RequestDTO(params: nil,
                                  method: .get,
-                                 endpoint: URLEndpoint.baseUrl+URLEndpoint.endpointMenu)
+                                 endpoint: URLEndpoint.baseUrl+URLEndpoint.endpointConsejosDeportes)
         
-        self.provider.requestGeneric(requestDto: request, entityClass: ResponseMenuModel.self)
+        self.provider.requestGeneric(requestDto: request, entityClass: ResponseConsejosModel.self)
             .sink { [weak self] (completion) in
                 guard self != nil else { return }
                 switch completion {
@@ -35,11 +31,11 @@ class MenuProviderImpl: MenuProviderProtocol {
                 case .failure(let error):
                     completionHandler(.failure(error))
                 }
-        } receiveValue: { [weak self] responseMenuModel in
+        } receiveValue: { [weak self] responseConsejosModel in
             guard self != nil else { return }
-            completionHandler(.success(responseMenuModel))
+            completionHandler(.success(responseConsejosModel))
         }.store(in: &cancellable)
-    }*/
+    }
     
 }
 

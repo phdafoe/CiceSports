@@ -25,7 +25,7 @@ extension SplashInteractorImpl: SplashInteractorProtocol {
     internal func fetchDataFromHerokuBusiness(success: @escaping([MenuResponse]?) -> (), failure: @escaping(NetworkingError?) -> ()) {
         CoreDataStack.shared.isFirsTime { (result) in
             if result {
-                CoreDataStack.shared.setValueFirstTime(value: false)
+                CoreDataStack.shared.setValueFirstTime(value: true)
                 self.provider.fetchMenu { [weak self] (result) in
                     guard self != nil else { return }
                     switch result{

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertDefaultViewController" customModule="CiceSports" customModuleProvider="target">
+            <connections>
+                <outlet property="contrainBottomPrimaryToSuperview" destination="rn1-WV-fMb" id="MDc-Eu-0Sg"/>
+                <outlet property="labelMessage" destination="J3v-Mj-eIB" id="0g1-Ba-dlh"/>
+                <outlet property="labelTitle" destination="SFj-6l-YbH" id="sas-ih-ymD"/>
+                <outlet property="primaryButton" destination="zUW-v2-MVw" id="TAI-Rg-a8J"/>
+                <outlet property="secondryButton" destination="Fj0-TD-8Eh" id="2eI-Ns-EH5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHK-fN-KlB" userLabel="Mask view">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWf-ce-zrX" userLabel="Alert View">
+                    <rect key="frame" x="8" y="118" width="304" height="244.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUW-v2-MVw">
+                            <rect key="frame" x="20" y="104.5" width="264" height="50"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Hcr-7T-CiG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                            <state key="normal" title="_Inicia Sesión">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="primaryButtonACTION:" destination="-1" eventType="touchUpInside" id="kwg-fA-GC3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fj0-TD-8Eh">
+                            <rect key="frame" x="20" y="174.5" width="264" height="50"/>
+                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Z1H-NL-a8H"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                            <state key="normal" title="_Cancela Sesión">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="secundaryButtonACTION:" destination="-1" eventType="touchUpInside" id="e3E-lo-O2P"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Titulo del Alert view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFj-6l-YbH">
+                            <rect key="frame" x="20" y="38" width="264" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Mensaje del Alert view" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3v-Mj-eIB">
+                            <rect key="frame" x="20" y="66.5" width="264" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9d-cE-vSd">
+                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="8Fb-aF-Cap"/>
+                                <constraint firstAttribute="width" constant="44" id="ZNd-TQ-l06"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                            <state key="normal" title="X">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="closeButtonACTION:" destination="-1" eventType="touchUpInside" id="Y7M-Iq-MEq"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="T9d-cE-vSd" firstAttribute="leading" secondItem="OWf-ce-zrX" secondAttribute="leading" id="04J-sb-SJA"/>
+                        <constraint firstItem="zUW-v2-MVw" firstAttribute="leading" secondItem="OWf-ce-zrX" secondAttribute="leading" constant="20" id="BYu-7H-8v8"/>
+                        <constraint firstItem="J3v-Mj-eIB" firstAttribute="leading" secondItem="OWf-ce-zrX" secondAttribute="leading" constant="20" id="Kjg-2q-46p"/>
+                        <constraint firstAttribute="trailing" secondItem="zUW-v2-MVw" secondAttribute="trailing" constant="20" id="OTd-eL-77c"/>
+                        <constraint firstItem="Fj0-TD-8Eh" firstAttribute="top" secondItem="zUW-v2-MVw" secondAttribute="bottom" constant="20" id="OqP-3M-gQa"/>
+                        <constraint firstAttribute="trailing" secondItem="Fj0-TD-8Eh" secondAttribute="trailing" constant="20" id="PbS-1B-AJ9"/>
+                        <constraint firstItem="Fj0-TD-8Eh" firstAttribute="leading" secondItem="OWf-ce-zrX" secondAttribute="leading" constant="20" id="Vt5-qq-R4b"/>
+                        <constraint firstItem="SFj-6l-YbH" firstAttribute="leading" secondItem="OWf-ce-zrX" secondAttribute="leading" constant="20" id="cKE-H8-SVW"/>
+                        <constraint firstItem="J3v-Mj-eIB" firstAttribute="top" secondItem="SFj-6l-YbH" secondAttribute="bottom" constant="8" id="fbm-fs-zNm"/>
+                        <constraint firstAttribute="trailing" secondItem="SFj-6l-YbH" secondAttribute="trailing" constant="20" id="gXg-UP-qgV"/>
+                        <constraint firstItem="zUW-v2-MVw" firstAttribute="top" secondItem="J3v-Mj-eIB" secondAttribute="bottom" constant="20" id="i9c-ew-wEd"/>
+                        <constraint firstAttribute="bottom" secondItem="Fj0-TD-8Eh" secondAttribute="bottom" constant="20" id="mxg-sE-NuI"/>
+                        <constraint firstItem="SFj-6l-YbH" firstAttribute="top" secondItem="OWf-ce-zrX" secondAttribute="top" constant="38" id="qag-HW-HVB"/>
+                        <constraint firstAttribute="bottom" secondItem="zUW-v2-MVw" secondAttribute="bottom" constant="90" id="rn1-WV-fMb"/>
+                        <constraint firstItem="T9d-cE-vSd" firstAttribute="top" secondItem="OWf-ce-zrX" secondAttribute="top" id="txJ-8U-KW4"/>
+                        <constraint firstAttribute="trailing" secondItem="J3v-Mj-eIB" secondAttribute="trailing" constant="20" id="wNh-zR-wWs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WHK-fN-KlB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Bfn-F6-VQ2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OWf-ce-zrX" secondAttribute="trailing" constant="8" id="KRz-0G-sFx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WHK-fN-KlB" secondAttribute="trailing" id="V4c-aK-1e4"/>
+                <constraint firstItem="WHK-fN-KlB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lg4-pR-FLK"/>
+                <constraint firstItem="OWf-ce-zrX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="8" id="nwp-32-7ue"/>
+                <constraint firstItem="OWf-ce-zrX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oyk-Nc-RUu"/>
+                <constraint firstItem="OWf-ce-zrX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="s4w-Z7-H0A"/>
+                <constraint firstAttribute="bottom" secondItem="WHK-fN-KlB" secondAttribute="bottom" id="uKb-jn-mfB"/>
+            </constraints>
+            <point key="canvasLocation" x="136.875" y="152.5"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

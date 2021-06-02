@@ -47,10 +47,28 @@
 		097ABF5D2665766C009BBC29 /* GenericWebViewInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ABF572665766C009BBC29 /* GenericWebViewInteractorImpl.swift */; };
 		097ABF6326657691009BBC29 /* GenericWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ABF6126657691009BBC29 /* GenericWebViewViewController.swift */; };
 		097ABF6426657691009BBC29 /* GenericWebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097ABF6226657691009BBC29 /* GenericWebViewViewController.xib */; };
+		09A983C32667F732003A4F11 /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A983C22667F732003A4F11 /* TableViewManager.swift */; };
+		09A983C72667F806003A4F11 /* TablePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A983C62667F806003A4F11 /* TablePresenterProtocol.swift */; };
+		09A983CA2667FF27003A4F11 /* FactoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A983C92667FF27003A4F11 /* FactoryCell.swift */; };
+		09A983CF26680173003A4F11 /* ConsejosGneralesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A983CD26680173003A4F11 /* ConsejosGneralesCell.swift */; };
+		09A983D026680173003A4F11 /* ConsejosGneralesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A983CE26680173003A4F11 /* ConsejosGneralesCell.xib */; };
+		09A983D4266801C2003A4F11 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A983D3266801C2003A4F11 /* BaseTableViewCell.swift */; };
+		09A983D7266808F5003A4F11 /* ConsejosGeneralesDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A983D6266808F5003A4F11 /* ConsejosGeneralesDrawer.swift */; };
 		09BD46802660140B001D1A09 /* SWRevealViewController .m in Sources */ = {isa = PBXBuildFile; fileRef = 09BD467E2660140B001D1A09 /* SWRevealViewController .m */; };
 		09BD468526601556001D1A09 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD468326601556001D1A09 /* HomeTabBarController.swift */; };
 		09BD468626601556001D1A09 /* HomeTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09BD468426601556001D1A09 /* HomeTabBarController.xib */; };
 		09BD468926601580001D1A09 /* HomeTabBarAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD468826601580001D1A09 /* HomeTabBarAssembly.swift */; };
+		09E1ED0D2666A30D00EA4ECC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09E1ED0F2666A30D00EA4ECC /* Localizable.strings */; };
+		09E1ED142666A59800EA4ECC /* LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1ED132666A59800EA4ECC /* LocalizedKeys.swift */; };
+		09E1ED1B2666A7B300EA4ECC /* AlertDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1ED192666A7B300EA4ECC /* AlertDefaultViewController.swift */; };
+		09E1ED1C2666A7B300EA4ECC /* AlertDefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E1ED1A2666A7B300EA4ECC /* AlertDefaultViewController.xib */; };
+		09E1ED212666AEBF00EA4ECC /* AlertDefaultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1ED202666AEBF00EA4ECC /* AlertDefaultViewModel.swift */; };
+		09E1ED272666BBEC00EA4ECC /* ResponseConsejosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1ED262666BBEC00EA4ECC /* ResponseConsejosModel.swift */; };
+		09E1ED342666BC7600EA4ECC /* ConsejosAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1ED332666BC7600EA4ECC /* ConsejosAssembly.swift */; };
+		09E1ED382666BC7600EA4ECC /* ConsejosRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1ED2F2666BC7500EA4ECC /* ConsejosRouterImpl.swift */; };
+		09E1ED392666BC7600EA4ECC /* ConsejosPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1ED312666BC7600EA4ECC /* ConsejosPresenterImpl.swift */; };
+		09E1ED3F2666BC9F00EA4ECC /* ConsejosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E1ED3D2666BC9F00EA4ECC /* ConsejosViewController.swift */; };
+		09E1ED402666BC9F00EA4ECC /* ConsejosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09E1ED3E2666BC9F00EA4ECC /* ConsejosViewController.xib */; };
 		09FDA25D265D6D45005FC381 /* SplashPresenterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDA25C265D6D45005FC381 /* SplashPresenterImpl.swift */; };
 		09FDA260265D6EE5005FC381 /* SplashRouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDA25F265D6EE5005FC381 /* SplashRouterImpl.swift */; };
 		09FDA263265D71BA005FC381 /* SplashAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FDA262265D71BA005FC381 /* SplashAssembly.swift */; };
@@ -105,12 +123,32 @@
 		097ABF572665766C009BBC29 /* GenericWebViewInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewInteractorImpl.swift; sourceTree = "<group>"; };
 		097ABF6126657691009BBC29 /* GenericWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewViewController.swift; sourceTree = "<group>"; };
 		097ABF6226657691009BBC29 /* GenericWebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericWebViewViewController.xib; sourceTree = "<group>"; };
+		09A983C22667F732003A4F11 /* TableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewManager.swift; sourceTree = "<group>"; };
+		09A983C62667F806003A4F11 /* TablePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablePresenterProtocol.swift; sourceTree = "<group>"; };
+		09A983C92667FF27003A4F11 /* FactoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryCell.swift; sourceTree = "<group>"; };
+		09A983CD26680173003A4F11 /* ConsejosGneralesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsejosGneralesCell.swift; sourceTree = "<group>"; };
+		09A983CE26680173003A4F11 /* ConsejosGneralesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsejosGneralesCell.xib; sourceTree = "<group>"; };
+		09A983D3266801C2003A4F11 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		09A983D6266808F5003A4F11 /* ConsejosGeneralesDrawer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsejosGeneralesDrawer.swift; sourceTree = "<group>"; };
 		09BD467D2660140A001D1A09 /* CiceSports-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CiceSports-Bridging-Header.h"; sourceTree = "<group>"; };
 		09BD467E2660140B001D1A09 /* SWRevealViewController .m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SWRevealViewController .m"; sourceTree = "<group>"; };
 		09BD467F2660140B001D1A09 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		09BD468326601556001D1A09 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		09BD468426601556001D1A09 /* HomeTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabBarController.xib; sourceTree = "<group>"; };
 		09BD468826601580001D1A09 /* HomeTabBarAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarAssembly.swift; sourceTree = "<group>"; };
+		09E1ED0E2666A30D00EA4ECC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09E1ED112666A33A00EA4ECC /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09E1ED122666A37300EA4ECC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		09E1ED132666A59800EA4ECC /* LocalizedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKeys.swift; sourceTree = "<group>"; };
+		09E1ED192666A7B300EA4ECC /* AlertDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDefaultViewController.swift; sourceTree = "<group>"; };
+		09E1ED1A2666A7B300EA4ECC /* AlertDefaultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertDefaultViewController.xib; sourceTree = "<group>"; };
+		09E1ED202666AEBF00EA4ECC /* AlertDefaultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDefaultViewModel.swift; sourceTree = "<group>"; };
+		09E1ED262666BBEC00EA4ECC /* ResponseConsejosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseConsejosModel.swift; sourceTree = "<group>"; };
+		09E1ED2F2666BC7500EA4ECC /* ConsejosRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsejosRouterImpl.swift; sourceTree = "<group>"; };
+		09E1ED312666BC7600EA4ECC /* ConsejosPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsejosPresenterImpl.swift; sourceTree = "<group>"; };
+		09E1ED332666BC7600EA4ECC /* ConsejosAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsejosAssembly.swift; sourceTree = "<group>"; };
+		09E1ED3D2666BC9F00EA4ECC /* ConsejosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsejosViewController.swift; sourceTree = "<group>"; };
+		09E1ED3E2666BC9F00EA4ECC /* ConsejosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsejosViewController.xib; sourceTree = "<group>"; };
 		09FDA25C265D6D45005FC381 /* SplashPresenterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenterImpl.swift; sourceTree = "<group>"; };
 		09FDA25F265D6EE5005FC381 /* SplashRouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRouterImpl.swift; sourceTree = "<group>"; };
 		09FDA262265D71BA005FC381 /* SplashAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAssembly.swift; sourceTree = "<group>"; };
@@ -140,6 +178,7 @@
 		091CA0A4265EB8CD007A19BF /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				09A983C12667F671003A4F11 /* TableView */,
 				097ABF4526654AED009BBC29 /* NetworkError.swift */,
 				091CA0A5265EB904007A19BF /* RequestManager.swift */,
 				097ABF4A266560EB009BBC29 /* CoreDataStack.swift */,
@@ -151,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				091CA0A9265EBA24007A19BF /* Utils.swift */,
+				09E1ED132666A59800EA4ECC /* LocalizedKeys.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -204,6 +244,27 @@
 				097ABF6226657691009BBC29 /* GenericWebViewViewController.xib */,
 			);
 			path = WebView;
+			sourceTree = "<group>";
+		};
+		09A983C12667F671003A4F11 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				09A983C22667F732003A4F11 /* TableViewManager.swift */,
+				09A983C62667F806003A4F11 /* TablePresenterProtocol.swift */,
+				09A983C92667FF27003A4F11 /* FactoryCell.swift */,
+				09A983D3266801C2003A4F11 /* BaseTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		09A983CC26680133003A4F11 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09A983CD26680173003A4F11 /* ConsejosGneralesCell.swift */,
+				09A983CE26680173003A4F11 /* ConsejosGneralesCell.xib */,
+				09A983D6266808F5003A4F11 /* ConsejosGeneralesDrawer.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		09BD467C266013E9001D1A09 /* MenuLateral */ = {
@@ -278,6 +339,69 @@
 			path = N2;
 			sourceTree = "<group>";
 		};
+		09E1ED172666A75900EA4ECC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				09E1ED182666A77100EA4ECC /* AlertDefault */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		09E1ED182666A77100EA4ECC /* AlertDefault */ = {
+			isa = PBXGroup;
+			children = (
+				09E1ED1F2666AEA900EA4ECC /* ViewModel */,
+				09E1ED192666A7B300EA4ECC /* AlertDefaultViewController.swift */,
+				09E1ED1A2666A7B300EA4ECC /* AlertDefaultViewController.xib */,
+			);
+			path = AlertDefault;
+			sourceTree = "<group>";
+		};
+		09E1ED1F2666AEA900EA4ECC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09E1ED202666AEBF00EA4ECC /* AlertDefaultViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		09E1ED232666BBAE00EA4ECC /* Consejos */ = {
+			isa = PBXGroup;
+			children = (
+				09A983CC26680133003A4F11 /* Cell */,
+				09E1ED312666BC7600EA4ECC /* ConsejosPresenterImpl.swift */,
+				09E1ED2F2666BC7500EA4ECC /* ConsejosRouterImpl.swift */,
+				09E1ED3D2666BC9F00EA4ECC /* ConsejosViewController.swift */,
+				09E1ED3E2666BC9F00EA4ECC /* ConsejosViewController.xib */,
+				09E1ED242666BBC600EA4ECC /* Infrastructure */,
+			);
+			path = Consejos;
+			sourceTree = "<group>";
+		};
+		09E1ED242666BBC600EA4ECC /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				09E1ED332666BC7600EA4ECC /* ConsejosAssembly.swift */,
+				09E1ED252666BBD000EA4ECC /* ServerModel */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		09E1ED252666BBD000EA4ECC /* ServerModel */ = {
+			isa = PBXGroup;
+			children = (
+				09E1ED262666BBEC00EA4ECC /* ResponseConsejosModel.swift */,
+			);
+			path = ServerModel;
+			sourceTree = "<group>";
+		};
+		09E1ED422666C7FF00EA4ECC /* Music */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
 		09FDA265265D72DB005FC381 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +459,7 @@
 		B433FFE3265C2456007DE3C7 /* CiceSports */ = {
 			isa = PBXGroup;
 			children = (
+				09E1ED172666A75900EA4ECC /* Components */,
 				09BD467C266013E9001D1A09 /* MenuLateral */,
 				091CA0A8265EBA14007A19BF /* Utils */,
 				091CA0A4265EB8CD007A19BF /* Managers */,
@@ -346,6 +471,7 @@
 				B433FFED265C245A007DE3C7 /* Assets.xcassets */,
 				B433FFEF265C245A007DE3C7 /* LaunchScreen.storyboard */,
 				B433FFF2265C245A007DE3C7 /* Info.plist */,
+				09E1ED0F2666A30D00EA4ECC /* Localizable.strings */,
 			);
 			path = CiceSports;
 			sourceTree = "<group>";
@@ -353,6 +479,8 @@
 		B433FFFC265C2530007DE3C7 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				09E1ED422666C7FF00EA4ECC /* Music */,
+				09E1ED232666BBAE00EA4ECC /* Consejos */,
 				097ABF4D2665763E009BBC29 /* WebView */,
 				09BD469126602667001D1A09 /* Training */,
 				09BD468B26602223001D1A09 /* Menu */,
@@ -404,6 +532,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				fr,
 			);
 			mainGroup = B433FFD8265C2456007DE3C7;
 			productRefGroup = B433FFE2265C2456007DE3C7 /* Products */;
@@ -422,7 +552,10 @@
 			files = (
 				B433FFF1265C245A007DE3C7 /* LaunchScreen.storyboard in Resources */,
 				0931135C26616D4D00B3D557 /* MenuViewController.xib in Resources */,
+				09A983D026680173003A4F11 /* ConsejosGneralesCell.xib in Resources */,
+				09E1ED0D2666A30D00EA4ECC /* Localizable.strings in Resources */,
 				B4330000265C257A007DE3C7 /* SplashViewController.xib in Resources */,
+				09E1ED402666BC9F00EA4ECC /* ConsejosViewController.xib in Resources */,
 				09BD468626601556001D1A09 /* HomeTabBarController.xib in Resources */,
 				097ABF6426657691009BBC29 /* GenericWebViewViewController.xib in Resources */,
 				0931136826617BBA00B3D557 /* HeaderTableViewCell.xib in Resources */,
@@ -430,6 +563,7 @@
 				0931135626616D0200B3D557 /* TrainingOneViewController.xib in Resources */,
 				0931136226616D9B00B3D557 /* TrainignTwoViewController.xib in Resources */,
 				B433FFEE265C245A007DE3C7 /* Assets.xcassets in Resources */,
+				09E1ED1C2666A7B300EA4ECC /* AlertDefaultViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +577,7 @@
 				B4330006265C3141007DE3C7 /* AppAssembly.swift in Sources */,
 				093113242661636800B3D557 /* TrainignTwoInteractorImpl.swift in Sources */,
 				097ABF5A2665766C009BBC29 /* GenericWebViewPresenterImpl.swift in Sources */,
+				09E1ED1B2666A7B300EA4ECC /* AlertDefaultViewController.swift in Sources */,
 				09311337266164CF00B3D557 /* TrainingOneProviderImpl.swift in Sources */,
 				09311338266164CF00B3D557 /* TrainingOneRouterImpl.swift in Sources */,
 				09BD46802660140B001D1A09 /* SWRevealViewController .m in Sources */,
@@ -450,7 +585,11 @@
 				097ABF4B266560EB009BBC29 /* CoreDataStack.swift in Sources */,
 				0931133B266164CF00B3D557 /* TrainingOneInteractorImpl.swift in Sources */,
 				0931134F266166B000B3D557 /* MenuAssembly.swift in Sources */,
+				09E1ED342666BC7600EA4ECC /* ConsejosAssembly.swift in Sources */,
+				09A983D7266808F5003A4F11 /* ConsejosGeneralesDrawer.swift in Sources */,
 				0931134D266166B000B3D557 /* MenuRouterImpl.swift in Sources */,
+				09E1ED142666A59800EA4ECC /* LocalizedKeys.swift in Sources */,
+				09E1ED382666BC7600EA4ECC /* ConsejosRouterImpl.swift in Sources */,
 				091CA0BB265ED961007A19BF /* MenuViewModel.swift in Sources */,
 				093113272661636800B3D557 /* TrainignTwoPresenterImpl.swift in Sources */,
 				097ABF5D2665766C009BBC29 /* GenericWebViewInteractorImpl.swift in Sources */,
@@ -463,23 +602,32 @@
 				B433FFE5265C2456007DE3C7 /* AppDelegate.swift in Sources */,
 				0931136126616D9B00B3D557 /* TrainignTwoViewController.swift in Sources */,
 				B433FFFF265C257A007DE3C7 /* SplashViewController.swift in Sources */,
+				09A983D4266801C2003A4F11 /* BaseTableViewCell.swift in Sources */,
 				093113292661636800B3D557 /* TrainignTwoProviderImpl.swift in Sources */,
 				0931133A266164CF00B3D557 /* TrainingOneAssembly.swift in Sources */,
 				097ABF592665766C009BBC29 /* GenericWebViewProviderImpl.swift in Sources */,
+				09A983C32667F732003A4F11 /* TableViewManager.swift in Sources */,
 				097ABF6326657691009BBC29 /* GenericWebViewViewController.swift in Sources */,
 				0931135526616D0200B3D557 /* TrainingOneViewController.swift in Sources */,
+				09A983CA2667FF27003A4F11 /* FactoryCell.swift in Sources */,
 				091CA0AA265EBA24007A19BF /* Utils.swift in Sources */,
+				09E1ED212666AEBF00EA4ECC /* AlertDefaultViewModel.swift in Sources */,
 				B433000C265C38F3007DE3C7 /* BaseVIPER.swift in Sources */,
 				091CA0A6265EB904007A19BF /* RequestManager.swift in Sources */,
 				093113252661636800B3D557 /* TrainignTwoAssembly.swift in Sources */,
 				0931134C266166B000B3D557 /* MenuInteractorImpl.swift in Sources */,
+				09E1ED392666BC7600EA4ECC /* ConsejosPresenterImpl.swift in Sources */,
 				091CA0AE265EC41E007A19BF /* SplashProviderImpl.swift in Sources */,
 				09311339266164CF00B3D557 /* TrainingOnePresenterImpl.swift in Sources */,
 				0931136726617BBA00B3D557 /* HeaderTableViewCell.swift in Sources */,
 				091CA0B6265ED294007A19BF /* SplashInteractorImpl.swift in Sources */,
+				09E1ED272666BBEC00EA4ECC /* ResponseConsejosModel.swift in Sources */,
 				09FDA260265D6EE5005FC381 /* SplashRouterImpl.swift in Sources */,
 				09FDA267265D72F9005FC381 /* ReuseIdentifier.swift in Sources */,
 				097ABF5B2665766C009BBC29 /* GenericWebViewRouterImpl.swift in Sources */,
+				09A983C72667F806003A4F11 /* TablePresenterProtocol.swift in Sources */,
+				09A983CF26680173003A4F11 /* ConsejosGneralesCell.swift in Sources */,
+				09E1ED3F2666BC9F00EA4ECC /* ConsejosViewController.swift in Sources */,
 				0931135B26616D4D00B3D557 /* MenuViewController.swift in Sources */,
 				0931134A266166B000B3D557 /* MenuProviderImpl.swift in Sources */,
 				09BD468526601556001D1A09 /* HomeTabBarController.swift in Sources */,
@@ -491,6 +639,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		09E1ED0F2666A30D00EA4ECC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09E1ED0E2666A30D00EA4ECC /* en */,
+				09E1ED112666A33A00EA4ECC /* es */,
+				09E1ED122666A37300EA4ECC /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		B433FFEF265C245A007DE3C7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -506,6 +664,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -567,6 +726,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

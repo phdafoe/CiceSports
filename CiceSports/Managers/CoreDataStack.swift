@@ -37,7 +37,7 @@ class CoreDataStack {
     
     func isFirsTime(completionHandler: (Bool) -> ()) {
         let aux = defaults.value(forKey: defaultsFirstTime)
-        if aux == nil {
+        if aux == nil || (aux != nil) == true {
             completionHandler(true)
         } else {
             completionHandler(false)
@@ -70,10 +70,35 @@ class CoreDataStack {
         }
         return myData
     }
+    
+    func setConsejos(data: [ConsejosGenerale]) {
+        do {
+            UserDefaults.standard.set(try PropertyListEncoder().encode(data), forKey: CoreDataStack.Constants.consejos)
+        } catch let error{
+            print(error)
+        }
+    }
+    
+    func getConsejos() -> [ConsejosGenerale]? {
+        var myData: [ConsejosGenerale] = []
+        if let data = UserDefaults.standard.value(forKey: CoreDataStack.Constants.consejos) as? Data {
+            do {
+                myData = try PropertyListDecoder().decode([ConsejosGenerale].self, from: data)
+            } catch let error {
+                print(error)
+            }
+        } else {
+            return nil
+        }
+        return myData
+    }
+    
+    
 }
 
 private extension CoreDataStack{
     struct Constants {
         static let menu = "menu"
+        static let consejos = "consejos"
     }
 }

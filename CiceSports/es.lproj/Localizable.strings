@@ -1,0 +1,9 @@
+//General
+"general_accept" = "Aceptar";
+"general_cancel" = "Cancelar";
+"title_my_alert" = "Mi contenido";
+"message_my_alert" = "Tu contenido descargado supera el límite que has indicado. Para descargar contenido nuevo debes ampliar el espacio y eliminar contenido.";
+
+//Default Alert
+
+

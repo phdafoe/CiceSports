@@ -19,6 +19,7 @@ class MenuViewController: BaseViewController<MenuPresenterProtocol>, ReuseIdenti
     override func viewDidLoad() {
         super.viewDidLoad()
         self.setupTableView()
+        self.presenter?.fetchDataFromHeroku()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -94,9 +95,15 @@ extension MenuViewController: UITableViewDelegate, UITableViewDataSource {
         default:
             switch indexPath.row {
             case 0:
-                self.presenter?.showWebSiteGoogle()
+                self.presenter?.showWebSite()
+            case 1:
+                self.presenter?.navigateToMusic()
+            case 2:
+                self.presenter?.navigateToCalendar()
+            case 3:
+                self.presenter?.navigateToConsejos()
             default:
-                print("Aqui Andres mete gamba")
+                print("Nosotros")
             }
         }
     }
