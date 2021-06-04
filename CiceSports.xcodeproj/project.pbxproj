@@ -47,6 +47,12 @@
 		097ABF5D2665766C009BBC29 /* GenericWebViewInteractorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ABF572665766C009BBC29 /* GenericWebViewInteractorImpl.swift */; };
 		097ABF6326657691009BBC29 /* GenericWebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097ABF6126657691009BBC29 /* GenericWebViewViewController.swift */; };
 		097ABF6426657691009BBC29 /* GenericWebViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097ABF6226657691009BBC29 /* GenericWebViewViewController.xib */; };
+		099C156C26694BFE00311DA5 /* DetalleConsejosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C156A26694BFE00311DA5 /* DetalleConsejosViewController.swift */; };
+		099C156D26694BFE00311DA5 /* DetalleConsejosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099C156B26694BFE00311DA5 /* DetalleConsejosViewController.xib */; };
+		099C157026694C1000311DA5 /* DetalleConsejosAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C156F26694C1000311DA5 /* DetalleConsejosAssembly.swift */; };
+		099C157326694C7500311DA5 /* DetalleConsejosPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C157226694C7500311DA5 /* DetalleConsejosPresenter.swift */; };
+		099C15782669542600311DA5 /* DetalleConsejoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099C15762669542600311DA5 /* DetalleConsejoCell.swift */; };
+		099C15792669542600311DA5 /* DetalleConsejoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099C15772669542600311DA5 /* DetalleConsejoCell.xib */; };
 		09A983C32667F732003A4F11 /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A983C22667F732003A4F11 /* TableViewManager.swift */; };
 		09A983C72667F806003A4F11 /* TablePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A983C62667F806003A4F11 /* TablePresenterProtocol.swift */; };
 		09A983CA2667FF27003A4F11 /* FactoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A983C92667FF27003A4F11 /* FactoryCell.swift */; };
@@ -123,6 +129,12 @@
 		097ABF572665766C009BBC29 /* GenericWebViewInteractorImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewInteractorImpl.swift; sourceTree = "<group>"; };
 		097ABF6126657691009BBC29 /* GenericWebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewViewController.swift; sourceTree = "<group>"; };
 		097ABF6226657691009BBC29 /* GenericWebViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericWebViewViewController.xib; sourceTree = "<group>"; };
+		099C156A26694BFE00311DA5 /* DetalleConsejosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleConsejosViewController.swift; sourceTree = "<group>"; };
+		099C156B26694BFE00311DA5 /* DetalleConsejosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleConsejosViewController.xib; sourceTree = "<group>"; };
+		099C156F26694C1000311DA5 /* DetalleConsejosAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleConsejosAssembly.swift; sourceTree = "<group>"; };
+		099C157226694C7500311DA5 /* DetalleConsejosPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleConsejosPresenter.swift; sourceTree = "<group>"; };
+		099C15762669542600311DA5 /* DetalleConsejoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleConsejoCell.swift; sourceTree = "<group>"; };
+		099C15772669542600311DA5 /* DetalleConsejoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleConsejoCell.xib; sourceTree = "<group>"; };
 		09A983C22667F732003A4F11 /* TableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewManager.swift; sourceTree = "<group>"; };
 		09A983C62667F806003A4F11 /* TablePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablePresenterProtocol.swift; sourceTree = "<group>"; };
 		09A983C92667FF27003A4F11 /* FactoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryCell.swift; sourceTree = "<group>"; };
@@ -244,6 +256,27 @@
 				097ABF6226657691009BBC29 /* GenericWebViewViewController.xib */,
 			);
 			path = WebView;
+			sourceTree = "<group>";
+		};
+		099C156926694BCB00311DA5 /* DetalleConsejos */ = {
+			isa = PBXGroup;
+			children = (
+				099C15752669540D00311DA5 /* Cell */,
+				099C156A26694BFE00311DA5 /* DetalleConsejosViewController.swift */,
+				099C156B26694BFE00311DA5 /* DetalleConsejosViewController.xib */,
+				099C156F26694C1000311DA5 /* DetalleConsejosAssembly.swift */,
+				099C157226694C7500311DA5 /* DetalleConsejosPresenter.swift */,
+			);
+			path = DetalleConsejos;
+			sourceTree = "<group>";
+		};
+		099C15752669540D00311DA5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				099C15762669542600311DA5 /* DetalleConsejoCell.swift */,
+				099C15772669542600311DA5 /* DetalleConsejoCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		09A983C12667F671003A4F11 /* TableView */ = {
@@ -368,6 +401,7 @@
 		09E1ED232666BBAE00EA4ECC /* Consejos */ = {
 			isa = PBXGroup;
 			children = (
+				099C156926694BCB00311DA5 /* DetalleConsejos */,
 				09A983CC26680133003A4F11 /* Cell */,
 				09E1ED312666BC7600EA4ECC /* ConsejosPresenterImpl.swift */,
 				09E1ED2F2666BC7500EA4ECC /* ConsejosRouterImpl.swift */,
@@ -553,6 +587,8 @@
 				B433FFF1265C245A007DE3C7 /* LaunchScreen.storyboard in Resources */,
 				0931135C26616D4D00B3D557 /* MenuViewController.xib in Resources */,
 				09A983D026680173003A4F11 /* ConsejosGneralesCell.xib in Resources */,
+				099C15792669542600311DA5 /* DetalleConsejoCell.xib in Resources */,
+				099C156D26694BFE00311DA5 /* DetalleConsejosViewController.xib in Resources */,
 				09E1ED0D2666A30D00EA4ECC /* Localizable.strings in Resources */,
 				B4330000265C257A007DE3C7 /* SplashViewController.xib in Resources */,
 				09E1ED402666BC9F00EA4ECC /* ConsejosViewController.xib in Resources */,
@@ -576,6 +612,7 @@
 			files = (
 				B4330006265C3141007DE3C7 /* AppAssembly.swift in Sources */,
 				093113242661636800B3D557 /* TrainignTwoInteractorImpl.swift in Sources */,
+				099C157326694C7500311DA5 /* DetalleConsejosPresenter.swift in Sources */,
 				097ABF5A2665766C009BBC29 /* GenericWebViewPresenterImpl.swift in Sources */,
 				09E1ED1B2666A7B300EA4ECC /* AlertDefaultViewController.swift in Sources */,
 				09311337266164CF00B3D557 /* TrainingOneProviderImpl.swift in Sources */,
@@ -589,6 +626,7 @@
 				09A983D7266808F5003A4F11 /* ConsejosGeneralesDrawer.swift in Sources */,
 				0931134D266166B000B3D557 /* MenuRouterImpl.swift in Sources */,
 				09E1ED142666A59800EA4ECC /* LocalizedKeys.swift in Sources */,
+				099C157026694C1000311DA5 /* DetalleConsejosAssembly.swift in Sources */,
 				09E1ED382666BC7600EA4ECC /* ConsejosRouterImpl.swift in Sources */,
 				091CA0BB265ED961007A19BF /* MenuViewModel.swift in Sources */,
 				093113272661636800B3D557 /* TrainignTwoPresenterImpl.swift in Sources */,
@@ -619,6 +657,7 @@
 				09E1ED392666BC7600EA4ECC /* ConsejosPresenterImpl.swift in Sources */,
 				091CA0AE265EC41E007A19BF /* SplashProviderImpl.swift in Sources */,
 				09311339266164CF00B3D557 /* TrainingOnePresenterImpl.swift in Sources */,
+				099C15782669542600311DA5 /* DetalleConsejoCell.swift in Sources */,
 				0931136726617BBA00B3D557 /* HeaderTableViewCell.swift in Sources */,
 				091CA0B6265ED294007A19BF /* SplashInteractorImpl.swift in Sources */,
 				09E1ED272666BBEC00EA4ECC /* ResponseConsejosModel.swift in Sources */,
@@ -626,6 +665,7 @@
 				09FDA267265D72F9005FC381 /* ReuseIdentifier.swift in Sources */,
 				097ABF5B2665766C009BBC29 /* GenericWebViewRouterImpl.swift in Sources */,
 				09A983C72667F806003A4F11 /* TablePresenterProtocol.swift in Sources */,
+				099C156C26694BFE00311DA5 /* DetalleConsejosViewController.swift in Sources */,
 				09A983CF26680173003A4F11 /* ConsejosGneralesCell.swift in Sources */,
 				09E1ED3F2666BC9F00EA4ECC /* ConsejosViewController.swift in Sources */,
 				0931135B26616D4D00B3D557 /* MenuViewController.swift in Sources */,

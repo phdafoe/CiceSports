@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ConsejosViewControllerProtocol {
-    
+    func automaticDimension() -> CGFloat
 }
 
 class ConsejosViewController: BaseViewController<ConsejosPresenterProtocol>, ReuseIdentifierInterfaceViewController {
@@ -22,11 +22,13 @@ class ConsejosViewController: BaseViewController<ConsejosPresenterProtocol>, Reu
         self.presenter?.getData()
         self.tableViewManager = TableViewManager(pTableView: self.myTableViewConsejos, pPresenter: self.presenter)
     }
-    
 }
 
 extension ConsejosViewController: ConsejosViewControllerProtocol {
     
+    func automaticDimension() -> CGFloat {
+        return UITableView.automaticDimension
+    }
     
 }
 

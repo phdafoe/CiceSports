@@ -77,13 +77,13 @@ class BaseRouter<P> {
         self.viewController = view
     }
     
-    internal func showVC(_ vc: UIViewController) {
+    internal func show(_ vc: UIViewController) {
         if let navigationController = viewController?.navigationController {
             navigationController.pushViewController(vc, animated: true)
         }
     }
     
-    internal func presentVC(_ vcToPresent: UIViewController, animated flag: Bool, completion: (() -> Swift.Void)? = nil) {
+    internal func present(_ vcToPresent: UIViewController, animated flag: Bool, completion: (() -> Swift.Void)? = nil) {
         if let navigationController = viewController?.navigationController {
             navigationController.present(vcToPresent, animated: flag, completion: completion)
             return

@@ -42,7 +42,7 @@ extension ConsejosPresenterImpl: TablePresenterProtocol {
         self.router?.showDetail(data: self.arrayConsejosGenerales[indexPath.row].messageArray ?? [])
     }
     
-    func heightForRow(_ tableType: TableType, indexPath: IndexPath) -> Int {
+    func heightForRow(_ tableType: TableType, indexPath: IndexPath) -> CGFloat {
         return 90
     }
     

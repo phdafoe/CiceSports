@@ -20,7 +20,7 @@ class MenuRouterImpl: BaseRouter< MenuPresenterProtocol> {
 extension MenuRouterImpl: MenuRouterProtocol {
     func showWebSiteInRouter() {
         let vc = GenericWebViewAssembly.navigationController()
-        self.presentVC(vc, animated: true, completion: nil)
+        self.present(vc, animated: true, completion: nil)
     }
     
     func showDefaultAlert(delegate: AlertDefaultViewControllerDelegate, model: AlertDefaultViewModel) {
