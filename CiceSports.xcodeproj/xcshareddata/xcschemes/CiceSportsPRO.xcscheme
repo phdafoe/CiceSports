@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B433FFE0265C2456007DE3C7"
-               BuildableName = "CiceSports.app"
-               BlueprintName = "CiceSports"
+               BuildableName = "CiceSportsPRO.app"
+               BlueprintName = "CiceSportsPRO"
                ReferencedContainer = "container:CiceSports.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B433FFE0265C2456007DE3C7"
-            BuildableName = "CiceSports.app"
-            BlueprintName = "CiceSports"
+            BuildableName = "CiceSportsPRO.app"
+            BlueprintName = "CiceSportsPRO"
             ReferencedContainer = "container:CiceSports.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -63,8 +63,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B433FFE0265C2456007DE3C7"
-            BuildableName = "CiceSports.app"
-            BlueprintName = "CiceSports"
+            BuildableName = "CiceSportsPRO.app"
+            BlueprintName = "CiceSportsPRO"
             ReferencedContainer = "container:CiceSports.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

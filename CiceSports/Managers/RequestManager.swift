@@ -16,7 +16,8 @@ class RequestManager: RequestManagerProtocol {
     
     internal func requestGeneric<T>(requestDto: RequestDTO, entityClass: T.Type) -> AnyPublisher<T, NetworkingError> where T: Decodable {
         
-        let endpoint = requestDto.endpoint
+        let baseurl = URLEndpoint.getBaseUrl(urlContext: requestDto.urlContext)
+        let endpoint = "\(baseurl)/\(requestDto.endpoint)"
         var urlRequest = URLRequest(url: URL(string: endpoint)!)
         let headers = AppAssembly.defaultHTTPHeaders
         

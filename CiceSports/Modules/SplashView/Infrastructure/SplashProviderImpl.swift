@@ -21,7 +21,8 @@ class SplashProviderImpl: SplashProviderProtocol {
         
         let request = RequestDTO(params: nil,
                                  method: .get,
-                                 endpoint: URLEndpoint.baseUrl+URLEndpoint.endpointMenu)
+                                 urlContext: .backend,
+                                 endpoint: URLEndpoint.endpointMenu)
         
         self.provider.requestGeneric(requestDto: request, entityClass: ResponseMenuModel.self)
             .sink { [weak self] (completion) in
