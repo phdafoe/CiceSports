@@ -45,6 +45,4 @@ extension ConsejosPresenterImpl: TablePresenterProtocol {
     func heightForRow(_ tableType: TableType, indexPath: IndexPath) -> CGFloat {
         return 90
     }
-    
-    
 }

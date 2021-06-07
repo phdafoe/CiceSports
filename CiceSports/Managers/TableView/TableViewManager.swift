@@ -10,6 +10,9 @@ import UIKit
 
 enum TableType {
     case unspecified
+    case login
+    case register
+    case senderInfoFormulary
 }
 
 class TableViewManager: NSObject {

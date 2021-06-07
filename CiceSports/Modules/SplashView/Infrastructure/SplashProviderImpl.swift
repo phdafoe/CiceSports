@@ -21,7 +21,8 @@ class SplashProviderImpl: SplashProviderProtocol {
         
         let request = RequestDTO(params: nil,
                                  method: .get,
-                                 endpoint: URLEndpoint.baseUrl+URLEndpoint.endpointMenu)
+                                 endpoint: URLEndpoint.endpointMenu,
+                                 urlContext: .heroku)
         
         self.provider.requestGeneric(requestDto: request, entityClass: ResponseMenuModel.self)
             .sink { [weak self] (completion) in

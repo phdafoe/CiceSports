@@ -24,29 +24,80 @@ enum HTTPMethods: String {
     case post = "POST"
 }
 
+enum Environment: Int {
+    case DEV = 0
+    case PRE = 1
+    case PRO = 2
+}
+
 struct RequestDTO {
     var params: [String: Any]?
     var arrayParams: [[String: Any]]?
     var method: HTTPMethods
+    var urlContext: URLEndpoint.BaseURLContext
     var endpoint: String
     
-    init(params: [String: Any]?, method: HTTPMethods, endpoint: String) {
+    init(params: [String: Any]?, method: HTTPMethods, endpoint: String, urlContext: URLEndpoint.BaseURLContext) {
         self.params = params
         self.method = method
         self.endpoint = endpoint
+        self.urlContext = urlContext
     }
     
-    init(arrayParams:[[String: Any]]?, method: HTTPMethods, endpoint: String) {
+    init(arrayParams:[[String: Any]]?, method: HTTPMethods, endpoint: String, urlContext: URLEndpoint.BaseURLContext) {
         self.arrayParams = arrayParams
         self.method = method
         self.endpoint = endpoint
+        self.urlContext = urlContext
     }
 }
 
 struct URLEndpoint {
+    
+    #if DEV
+    static let environmentDefault: Environment = Environment.DEV
+    #elseif PRE
+    static let environmentDefault: Environment = Environment.PRE
+    #else
+    static let environmentDefault: Environment = Environment.PRO
+    #endif
+    
+    public enum BaseURLContext {
+        case backend
+        case heroku
+    }
+    
     static let baseUrl = "https://app-cicesport-123.herokuapp.com/"
     static let endpointMenu = "iCoMenuResponse"
     static let endpointConsejosDeportes = "iCoResponseConsejos"
+}
+
+
+extension URLEndpoint {
+    
+    static func getUrlBase(urlContext: BaseURLContext) -> String {
+        switch urlContext {
+        case .backend:
+            switch self.environmentDefault {
+            case .DEV:
+                return "https://app-herokuapp-des-cloudFirebase.com/"
+            case .PRE:
+                return "https://app-herokuapp-pre-cloudFirebase.com/"
+            case .PRO:
+                return "https://app-herokuapp-pro-cloudFirebase.com/"
+            }
+        case .heroku:
+            switch self.environmentDefault {
+            case .DEV:
+                return "https://app-herokuapp-des-cloudFirebase.com/"
+            case .PRE:
+                return "https://app-herokuapp-pre-cloudFirebase.com/"
+            case .PRO:
+                return "https://app-cicesport-123.herokuapp.com/"
+            }
+            
+        }
+    }
 }
 
 

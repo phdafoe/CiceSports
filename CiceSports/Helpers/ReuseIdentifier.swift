@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import MessageUI
 
 public protocol ReuseIdentifierInterface: class {
     static var defaultReuseIdentifier: String { get }
@@ -39,6 +40,22 @@ extension UIViewController {
         revealViewController()?.panGestureRecognizer()
         self.navigationItem.leftBarButtonItem = menuButton
     }
+    
+    func configuredMailComposeViewController() -> MFMailComposeViewController {
+        let mailCompose = MFMailComposeViewController()
+        mailCompose.setToRecipients(["info@icologic.com"])
+        mailCompose.setSubject("Ayuda desde la App CiceSports")
+        mailCompose.setMessageBody("Escribe tu mensaje al equipo de sporte de CiceSports", isHTML: false)
+        return mailCompose
+    }
+    
+    func showAlertVC(title: String, message: String) -> UIAlertController {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        return alert
+    }
+    
 }
 
 func showImageMenuWithName(imageMenu: Menu) -> UIImage {

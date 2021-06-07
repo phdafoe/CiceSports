@@ -8,7 +8,7 @@
 import UIKit
 
 protocol TrainingOneViewControllerProtocol {
-    
+    func reloadData()
 }
 
 class TrainingOneViewController: BaseViewController<TrainingOnePresenterProtocol>, ReuseIdentifierInterfaceViewController {
@@ -17,12 +17,15 @@ class TrainingOneViewController: BaseViewController<TrainingOnePresenterProtocol
     override func viewDidLoad() {
         super.viewDidLoad()
         self.menuButton()
-       
+        //self.showLoading()
     }
     
 }
 
 extension TrainingOneViewController: TrainingOneViewControllerProtocol {
     
+    func reloadData() {
+        //self.hideLoading()
+    }
     
 }

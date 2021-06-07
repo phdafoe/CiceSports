@@ -20,7 +20,8 @@ class MenuProviderImpl: MenuProviderProtocol {
         
         let request = RequestDTO(params: nil,
                                  method: .get,
-                                 endpoint: URLEndpoint.baseUrl+URLEndpoint.endpointConsejosDeportes)
+                                 endpoint: URLEndpoint.endpointConsejosDeportes,
+                                 urlContext: .heroku)
         
         self.provider.requestGeneric(requestDto: request, entityClass: ResponseConsejosModel.self)
             .sink { [weak self] (completion) in

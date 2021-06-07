@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import PKHUD
 
 // MARK: - BaseViewController
 class BaseViewController<P>: UIViewController {
@@ -37,6 +38,14 @@ class BaseViewController<P>: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func showLoading() {
+        HUD.show(.progress)
+    }
+    
+    func hideLoading() {
+        HUD.hide()
     }
 }
 
