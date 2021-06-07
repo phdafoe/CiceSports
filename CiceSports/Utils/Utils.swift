@@ -24,7 +24,8 @@ enum HTTPMethods: String {
     case post = "POST"
 }
 
-enum Environment: Int {
+
+public enum Environment: Int {
     case DEV = 0
     case PRE = 1
     case PRO = 2
@@ -37,16 +38,20 @@ struct RequestDTO {
     var urlContext: URLEndpoint.BaseURLContext
     var endpoint: String
     
+
     init(params: [String: Any]?, method: HTTPMethods, endpoint: String, urlContext: URLEndpoint.BaseURLContext) {
         self.params = params
         self.method = method
+        self.urlContext = urlContext
         self.endpoint = endpoint
         self.urlContext = urlContext
     }
     
+
     init(arrayParams:[[String: Any]]?, method: HTTPMethods, endpoint: String, urlContext: URLEndpoint.BaseURLContext) {
         self.arrayParams = arrayParams
         self.method = method
+        self.urlContext = urlContext
         self.endpoint = endpoint
         self.urlContext = urlContext
     }
@@ -55,11 +60,11 @@ struct RequestDTO {
 struct URLEndpoint {
     
     #if DEV
-    static let environmentDefault: Environment = Environment.DEV
+    static let environementDefault: Environment = Environment.DEV
     #elseif PRE
-    static let environmentDefault: Environment = Environment.PRE
+    static let environementDefault: Environment = Environment.PRE
     #else
-    static let environmentDefault: Environment = Environment.PRO
+    static let environementDefault: Environment = Environment.PRO
     #endif
     
     public enum BaseURLContext {
@@ -72,13 +77,12 @@ struct URLEndpoint {
     static let endpointConsejosDeportes = "iCoResponseConsejos"
 }
 
-
 extension URLEndpoint {
     
     static func getUrlBase(urlContext: BaseURLContext) -> String {
         switch urlContext {
         case .backend:
-            switch self.environmentDefault {
+            switch self.environementDefault {
             case .DEV:
                 return "https://app-herokuapp-des-cloudFirebase.com/"
             case .PRE:
@@ -87,7 +91,7 @@ extension URLEndpoint {
                 return "https://app-herokuapp-pro-cloudFirebase.com/"
             }
         case .heroku:
-            switch self.environmentDefault {
+            switch self.environementDefault {
             case .DEV:
                 return "https://app-herokuapp-des-cloudFirebase.com/"
             case .PRE:

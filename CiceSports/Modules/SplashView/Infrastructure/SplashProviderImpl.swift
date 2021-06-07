@@ -23,6 +23,7 @@ class SplashProviderImpl: SplashProviderProtocol {
                                  method: .get,
                                  endpoint: URLEndpoint.endpointMenu,
                                  urlContext: .heroku)
+
         
         self.provider.requestGeneric(requestDto: request, entityClass: ResponseMenuModel.self)
             .sink { [weak self] (completion) in

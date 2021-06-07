@@ -172,13 +172,15 @@
 		09FDA266265D72F9005FC381 /* ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifier.swift; sourceTree = "<group>"; };
 		B4330005265C3141007DE3C7 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
 		B433000B265C38F3007DE3C7 /* BaseVIPER.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVIPER.swift; sourceTree = "<group>"; };
-		B433FFE1265C2456007DE3C7 /* CiceSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiceSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B433FFE1265C2456007DE3C7 /* CiceSportsPRO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiceSportsPRO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B433FFE4265C2456007DE3C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B433FFED265C245A007DE3C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B433FFF0265C245A007DE3C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B433FFF2265C245A007DE3C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B433FFFD265C257A007DE3C7 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		B433FFFE265C257A007DE3C7 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		B49AF6EB266D1237000A08D3 /* CiceSportsDEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiceSportsDEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B49AF743266D1345000A08D3 /* CiceSports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiceSports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -501,7 +503,9 @@
 		B433FFE2265C2456007DE3C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B433FFE1265C2456007DE3C7 /* CiceSports.app */,
+				B433FFE1265C2456007DE3C7 /* CiceSportsPRO.app */,
+				B49AF6EB266D1237000A08D3 /* CiceSportsDEV.app */,
+				B49AF743266D1345000A08D3 /* CiceSports.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -560,7 +564,7 @@
 				0963CA4A266E8D460047D074 /* PKHUD */,
 			);
 			productName = CiceSports;
-			productReference = B433FFE1265C2456007DE3C7 /* CiceSports.app */;
+			productReference = B49AF743266D1345000A08D3 /* CiceSports.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

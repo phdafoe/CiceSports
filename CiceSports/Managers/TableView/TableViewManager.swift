@@ -69,7 +69,10 @@ extension TableViewManager: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        CGFloat(presenter?.heightForRow(tableType, indexPath: indexPath) ?? 0)
+        guard let height = presenter?.heightForRow(tableType, indexPath: indexPath) else {
+            return UITableView.automaticDimension
+        }
+        return CGFloat(height)
     }
     
 }
